@@ -36,14 +36,13 @@ export class FridgeService {
         shelfs: [...fridge2.shelfs, ...new Array(7 - fridge2.shelfs.length).fill('')],
       },
       3: {
-        shelfs: [...fridge3.shelfs, ...new Array(5 - fridge3.shelfs.length).fill('')],
+        shelfs: [...fridge3.shelfs, ...new Array(6 - fridge3.shelfs.length).fill('')],
       }
     }
   }
 
 
   async update(id: string, shelfs: string[]) {
-    console.log(shelfs, id);
     await setDoc(doc(this.firestore, this.fireStoreKey, id), { shelfs });
   }
 }

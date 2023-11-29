@@ -32,26 +32,26 @@
     @case (2) {
       <div class="fridge fridge-2">
         <div class="area">
-          <app-fridge-shelf [text]="fridges[2].shelfs[1]" (save)="save('2', 1, $event)" [height]="100"></app-fridge-shelf>
-          <app-fridge-shelf [text]="fridges[2].shelfs[2]" (save)="save('2', 2, $event)" [height]="120"></app-fridge-shelf>
-          <app-fridge-shelf [text]="fridges[2].shelfs[3]" (save)="save('2', 3, $event)" [height]="130"></app-fridge-shelf>
-          <app-fridge-shelf [text]="fridges[2].shelfs[4]" (save)="save('2', 4, $event)" [height]="60"></app-fridge-shelf>
+          <app-fridge-shelf [text]="fridges[2].shelfs[0]" (save)="save('2', 0, $event)" [height]="100"></app-fridge-shelf>
+          <app-fridge-shelf [text]="fridges[2].shelfs[1]" (save)="save('2', 1, $event)" [height]="120"></app-fridge-shelf>
+          <app-fridge-shelf [text]="fridges[2].shelfs[2]" (save)="save('2', 2, $event)" [height]="130"></app-fridge-shelf>
+          <app-fridge-shelf [text]="fridges[2].shelfs[3]" (save)="save('2', 3, $event)" [height]="60"></app-fridge-shelf>
         </div>
         <div class="area">
+          <app-fridge-shelf [text]="fridges[2].shelfs[4]" (save)="save('2', 4, $event)" [height]="70"></app-fridge-shelf>
           <app-fridge-shelf [text]="fridges[2].shelfs[5]" (save)="save('2', 5, $event)" [height]="70"></app-fridge-shelf>
           <app-fridge-shelf [text]="fridges[2].shelfs[6]" (save)="save('2', 6, $event)" [height]="70"></app-fridge-shelf>
-          <app-fridge-shelf [text]="fridges[2].shelfs[7]" (save)="save('2', 7, $event)" [height]="70"></app-fridge-shelf>
         </div>
       </div>
     }
     @case (3) {
       <div class="fridge fridge-3">
         <div class="area">
+          <app-fridge-shelf [text]="fridges[3].shelfs[0]" (save)="save('3', 0, $event)" [height]="140"></app-fridge-shelf>
           <app-fridge-shelf [text]="fridges[3].shelfs[1]" (save)="save('3', 1, $event)" [height]="140"></app-fridge-shelf>
           <app-fridge-shelf [text]="fridges[3].shelfs[2]" (save)="save('3', 2, $event)" [height]="140"></app-fridge-shelf>
           <app-fridge-shelf [text]="fridges[3].shelfs[3]" (save)="save('3', 3, $event)" [height]="140"></app-fridge-shelf>
           <app-fridge-shelf [text]="fridges[3].shelfs[4]" (save)="save('3', 4, $event)" [height]="140"></app-fridge-shelf>
-          <app-fridge-shelf [text]="fridges[3].shelfs[5]" (save)="save('3', 5, $event)" [height]="140"></app-fridge-shelf>
         </div>
       </div>
     }
