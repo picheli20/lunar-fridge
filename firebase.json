@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "lunar-fridge",
+      "public": "dist/lunar-fridge/browser",
+      "frameworksBackend": {}
+    }
+  ]
+}

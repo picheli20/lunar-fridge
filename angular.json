@@ -94,8 +94,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "lunar-fridge:build:production"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a5e2214d-5af4-4774-b52b-1df6a2d6e09f"
   }
 }

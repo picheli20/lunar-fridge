@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lunarfridge-f224d": {
+      "hosting": {
+        "lunar-fridge": [
+          "lunarfridge-f224d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lunarfridge-f224d"
+  }
+}
