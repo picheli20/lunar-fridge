@@ -1,0 +1,56 @@
+<div class="header">
+  <button (click)="selected = 1" [class.selected]="selected === 1">
+    Fridge 1
+  </button>
+  <button (click)="selected = 2" [class.selected]="selected === 2">
+    Fridge 2
+  </button>
+  <button (click)="selected = 3" [class.selected]="selected === 3">
+    Fridge 3
+  </button>
+</div>
+
+@switch (selected) {
+  @case (1) {
+    <div class="fridge fridge-1">
+      <div class="area">
+        <app-fridge-shelf [height]="150"></app-fridge-shelf>
+        <app-fridge-shelf [height]="90"></app-fridge-shelf>
+        <app-fridge-shelf [height]="50"></app-fridge-shelf>
+        <app-fridge-shelf [height]="100"></app-fridge-shelf>
+        <app-fridge-shelf [height]="100"></app-fridge-shelf>
+      </div>
+      <div class="area">
+        <app-fridge-shelf [height]="75"></app-fridge-shelf>
+        <app-fridge-shelf [height]="75"></app-fridge-shelf>
+        <app-fridge-shelf [height]="75"></app-fridge-shelf>
+      </div>
+    </div>
+  }
+  @case (2) {
+    <div class="fridge fridge-2">
+      <div class="area">
+        <app-fridge-shelf [height]="100"></app-fridge-shelf>
+        <app-fridge-shelf [height]="120"></app-fridge-shelf>
+        <app-fridge-shelf [height]="130"></app-fridge-shelf>
+        <app-fridge-shelf [height]="60"></app-fridge-shelf>
+      </div>
+      <div class="area">
+        <app-fridge-shelf [height]="70"></app-fridge-shelf>
+        <app-fridge-shelf [height]="70"></app-fridge-shelf>
+        <app-fridge-shelf [height]="70"></app-fridge-shelf>
+      </div>
+    </div>
+  }
+  @case (3) {
+    <div class="fridge fridge-3">
+      <div class="area">
+        <app-fridge-shelf [height]="140"></app-fridge-shelf>
+        <app-fridge-shelf [height]="140"></app-fridge-shelf>
+        <app-fridge-shelf [height]="140"></app-fridge-shelf>
+        <app-fridge-shelf [height]="140"></app-fridge-shelf>
+        <app-fridge-shelf [height]="140"></app-fridge-shelf>
+      </div>
+    </div>
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+
+  button {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-size: #fff;
+    cursor: pointer;
+    padding: .5rem 1rem;
+
+    &.selected {
+      background-color: #000000;
+      color: #fff;
+    }
+  }
+}
+
+.fridge {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 15px;
+
+  .area {
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid black;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    app-fridge-shelf {
+      border-bottom: 1px dashed black;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
