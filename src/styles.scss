@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Changa One', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+
+button {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-size: #fff;
+  cursor: pointer;
+  padding: .5rem 1rem;
+
+  &.selected {
+    background-color: #000000;
+    color: #fff;
+  }
+
+  &.primary {
+    background-color: #8ADAB2;
+    border: 1px solid #8ADAB2;
+    color: #000;
+  }
+}

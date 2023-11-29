@@ -1,7 +1,23 @@
 <div class="shelf" [style.height]="height + 'px'">
-  @if(text) {
-    {{ text }}
+  @if (!editingSignal()) {
+    <div class="item" (click)="edit()">
+      @if(text) {
+        <span class="original">{{ text }}</span>
+
+        <div class="action">
+          <img src="assets/edit.svg" class="add">
+        </div>
+      } @else {
+        <img src="assets/add.png" class="add">
+      }
+    </div>
   } @else {
-    <img src="assets/add.png" class="add">
+    <div class="editing">
+      <textarea [(ngModel)]="modelText" ></textarea>
+      <div class="controls">
+        <button (click)="submit()" class="primary">Save</button>
+        <button (click)="cancel()">Cancel</button>
+      </div>
+    </div>
   }
 </div>

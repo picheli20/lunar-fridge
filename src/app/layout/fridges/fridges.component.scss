@@ -4,19 +4,6 @@
   align-items: center;
   gap: 2rem;
   padding: 2rem 0;
-
-  button {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    background-size: #fff;
-    cursor: pointer;
-    padding: .5rem 1rem;
-
-    &.selected {
-      background-color: #000000;
-      color: #fff;
-    }
-  }
 }
 
 .fridge {

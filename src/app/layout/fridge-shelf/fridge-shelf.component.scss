@@ -1,10 +1,52 @@
-.shelf {
+.item, .shelf {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
 
-  img {
-    width: 20px;
-    opacity: .5;
+.original {
+  white-space: pre;
+}
+
+.item {
+  padding: 0.5rem;
+}
+
+.editing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .controls {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 1rem;
+    width: 100px;
+
+    button {
+      width: 90%;
+    }
   }
+
+  textarea {
+    width: calc(100% - 106px);
+    height: 90%;
+    resize: none;
+  }
+}
+
+
+img {
+  width: 20px;
+  opacity: .5;
 }

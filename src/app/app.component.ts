@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FridgesComponents } from './layout/fridges/fridges.component';
 
@@ -7,6 +7,7 @@ import { FridgesComponents } from './layout/fridges/fridges.component';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, FridgesComponents],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
